@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoShow Kalkanı — Klinik randevularında boş koltuk bırakmayın</title>
+    <meta name="description" content="Diş klinikleri ve özel sağlık merkezleri için cevapsız arama, iptal ve gelmeyen hasta kaybını WhatsApp takip akışlarıyla azaltan 7 günlük pilot servis." />
+    <meta property="og:title" content="NoShow Kalkanı" />
+    <meta property="og:description" content="7 gün içinde kliniğiniz için randevu kurtarma akışını kuruyoruz. Daha az boş slot, daha hızlı geri dönüş, ölçülebilir gelir." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"NoShow Kalkanı","areaServed":"TR","serviceType":"Clinic appointment recovery","offers":{"@type":"Offer","price":"4900","priceCurrency":"TRY"}}</script>
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="NoShow Kalkanı ana sayfa"><span>NS</span> NoShow Kalkanı</a>
+      <nav>
+        <a href="#roi">ROI</a>
+        <a href="#pilot">Pilot</a>
+        <a href="#basvur">Başvur</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Diş klinikleri ve özel sağlık merkezleri için</p>
+          <h1>Boş kalan randevu slotlarını 7 günde geri kazanın.</h1>
+          <p class="lead">Cevapsız arama, son dakika iptal ve gelmeyen hasta sorununu; WhatsApp hatırlatma, hızlı yeniden planlama ve günlük gelir raporuyla kapatan done-for-you pilot servis.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#basvur">7 günlük pilot iste</a>
+            <a class="btn secondary" href="#roi">Kaybımı hesapla</a>
+          </div>
+          <ul class="proof">
+            <li>Kurulum: 48 saat</li>
+            <li>Pilot: ₺4.900 + başarı primi</li>
+            <li>Risk: Memnun kalmazsanız devam yok</li>
+          </ul>
+        </div>
+        <div class="card dashboard" aria-label="Randevu kurtarma paneli örneği">
+          <div class="metric"><span>Bu hafta kurtarılan slot</span><strong>11</strong></div>
+          <div class="metric"><span>Tahmini geri kazanılan ciro</span><strong>₺38.500</strong></div>
+          <div class="flow">
+            <div>1. Cevapsız arama yakala</div>
+            <div>2. WhatsApp takip gönder</div>
+            <div>3. Uygun slot öner</div>
+            <div>4. Gün sonu raporla</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem grid3">
+        <article><h2>Gelmeyen hasta</h2><p>Randevu saatinde boş koltuk, hekim ve ekip zamanını doğrudan yakar.</p></article>
+        <article><h2>Cevapsız arama</h2><p>Yoğun resepsiyon saatlerinde arayan hasta başka kliniğe kayar.</p></article>
+        <article><h2>Takipsiz iptal</h2><p>İptal eden hastaya aynı gün yeni slot sunulmazsa gelir kaçırılır.</p></article>
+      </section>
+
+      <section id="roi" class="roi card">
+        <div>
+          <p class="eyebrow">Hızlı hesap</p>
+          <h2>Kliniğin haftalık görünmeyen kaybı</h2>
+          <p>Aşağıdaki değerleri değiştirin; pilotun geri dönüşünü anında görün.</p>
+        </div>
+        <form class="calculator" id="calculator">
+          <label>Haftalık boş/kaçan slot <input type="number" id="slots" value="10" min="1" /></label>
+          <label>Ortalama işlem geliri (₺) <input type="number" id="ticket" value="3500" min="500" /></label>
+          <label>Kurtarma oranı (%) <input type="number" id="rate" value="30" min="5" max="80" /></label>
+          <output id="roiOutput">Haftalık tahmini kurtarma: ₺10.500</output>
+        </form>
+      </section>
+
+      <section id="pilot" class="pilot">
+        <p class="eyebrow">Satılabilir teklif</p>
+        <h2>7 günlük pilotta ne teslim ediyoruz?</h2>
+        <div class="grid2">
+          <ul class="checklist card">
+            <li>Kliniğe özel WhatsApp mesaj setleri</li>
+            <li>Cevapsız arama / iptal takip akışı</li>
+            <li>Günlük kurtarılan slot ve gelir raporu</li>
+            <li>Resepsiyon ekibi için mini SOP</li>
+            <li>Ölçüm tablosu ve sonraki 30 gün planı</li>
+          </ul>
+          <div class="pricing card">
+            <span class="badge">İlk 5 klinik</span>
+            <h3>₺4.900 kurulum</h3>
+            <p>+ pilotta ölçülen kurtarılan gelir üzerinden opsiyonel %5 başarı primi.</p>
+            <a class="btn primary" href="#basvur">Pilot slotu al</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="objections grid3">
+        <article><h3>KVKK?</h3><p>İlk pilotta hassas sağlık verisi istemiyoruz; yalnızca randevu takip metni ve operasyonel ölçüm.</p></article>
+        <article><h3>Entegrasyon?</h3><p>Başta manuel/CSV/Google Sheet ile başlarız. Para kazandırırsa entegrasyonu açarız.</p></article>
+        <article><h3>Spam mi?</h3><p>Yalnızca randevu ilişkisi olan ve iletişim izni bulunan hastalara, klinik adına gönderim.</p></article>
+      </section>
+
+      <section id="basvur" class="apply card">
+        <div>
+          <p class="eyebrow">Bugün başlanabilir</p>
+          <h2>Kliniğinizde kaç slot kurtarabiliriz?</h2>
+          <p>Formu doldurun; 24 saat içinde ücretsiz kayıp hesabı ve pilot planını gönderelim.</p>
+        </div>
+        <form id="leadForm" class="lead-form">
+          <label>Klinik adı <input name="clinic" required placeholder="Örn. Moda Diş Kliniği" /></label>
+          <label>Yetkili kişi <input name="name" required placeholder="Adınız" /></label>
+          <label>Telefon / WhatsApp <input name="phone" required placeholder="05xx xxx xx xx" /></label>
+          <label>Haftalık kaç randevu kaçıyor? <input name="lost" placeholder="Örn. 8-12" /></label>
+          <label class="consent"><input type="checkbox" name="consent" required /> Pilot planı için benimle iletişime geçilmesini kabul ediyorum.</label>
+          <button class="btn primary" type="submit">Pilot talebi gönder</button>
+          <p id="formStatus" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <strong>NoShow Kalkanı</strong>
+      <span>Yeni proje. Mevcut ürünlere bağlı değildir.</span>
+      <a href="mailto:goktug@datrick.com?subject=NoShow%20Kalkan%C4%B1%20Pilot">goktug@datrick.com</a>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
