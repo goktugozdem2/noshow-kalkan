@@ -18,6 +18,7 @@
       <nav>
         <a href="#roi">ROI</a>
         <a href="#pilot">Pilot</a>
+        <a href="#otomatik">Otomatik Rapor</a>
         <a href="sales/pilot-proposal.html">Teklif</a>
         <a href="#basvur">Başvur</a>
       </nav>
@@ -33,6 +34,7 @@
             <a class="btn primary" href="#basvur">7 günlük pilot iste</a>
             <a class="btn secondary" href="#roi">Kaybımı hesapla</a>
             <a class="btn secondary" href="sales/pilot-proposal.html">Teklif sayfasını gör</a>
+            <a class="btn secondary" href="#otomatik">Otomatik rapor al</a>
           </div>
           <ul class="proof">
             <li>Kurulum: 48 saat</li>
@@ -97,6 +99,24 @@
         <article><h3>KVKK?</h3><p>İlk pilotta hassas sağlık verisi istemiyoruz; yalnızca randevu takip metni ve operasyonel ölçüm.</p></article>
         <article><h3>Entegrasyon?</h3><p>Başta manuel/CSV/Google Sheet ile başlarız. Para kazandırırsa entegrasyonu açarız.</p></article>
         <article><h3>Spam mi?</h3><p>Yalnızca randevu ilişkisi olan ve iletişim izni bulunan hastalara, klinik adına gönderim.</p></article>
+      </section>
+
+      <section id="otomatik" class="auto-funnel card">
+        <div>
+          <p class="eyebrow">Tam otomatik ön satış</p>
+          <h2>15 saniyede klinik kaybınızı raporlayın, pilot talebini otomatik açın.</h2>
+          <p>Formu doldurduğunuzda cihazınızda hazır pilot raporu oluşur. İsterseniz tek tıkla GitHub üzerinde kayıtlı pilot talebi açılır; böylece talep kaybolmaz ve takip edilebilir.</p>
+        </div>
+        <form id="autoReportForm" class="lead-form">
+          <label>Klinik adı <input name="clinic" required placeholder="Örn. Kadıköy Dental" /></label>
+          <label>Yetkili kişi <input name="name" required placeholder="Adınız" /></label>
+          <label>Telefon / WhatsApp <input name="phone" required placeholder="05xx xxx xx xx" /></label>
+          <label>Haftalık kaçan slot <input type="number" name="slots" value="10" min="1" required /></label>
+          <label>Ortalama işlem geliri (₺) <input type="number" name="ticket" value="3500" min="500" required /></label>
+          <label>Kurtarma hedefi (%) <input type="number" name="rate" value="30" min="5" max="80" required /></label>
+          <button class="btn primary" type="submit">Otomatik raporu oluştur</button>
+          <div id="autoReportResult" class="report-result" aria-live="polite"></div>
+        </form>
       </section>
 
       <section id="basvur" class="apply card">
