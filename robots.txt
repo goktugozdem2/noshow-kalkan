@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://noshow-kalkan.vercel.app/sitemap.xml
+Sitemap: https://goktugozdem2.github.io/noshow-kalkan/sitemap.xml
