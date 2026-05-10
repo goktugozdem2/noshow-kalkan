@@ -1,0 +1,60 @@
+name: NoShow Kalkanı pilot talebi
+description: 7 günlük randevu/no-show kurtarma pilotu için takip edilebilir başvuru
+title: "Pilot talebi: [Klinik adı]"
+labels: ["pilot-lead"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bu form NoShow Kalkanı pilot başvurusunu otomatik takip edilebilir hale getirir. Hassas sağlık verisi yazmayın; hasta adı yerine kod kullanın.
+  - type: input
+    id: clinic
+    attributes:
+      label: Klinik adı
+      placeholder: Kadıköy Dental
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Yetkili kişi
+      placeholder: Ad Soyad
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Telefon / WhatsApp
+      placeholder: 05xx xxx xx xx
+    validations:
+      required: true
+  - type: input
+    id: slots
+    attributes:
+      label: Haftalık kaçan slot
+      placeholder: "10"
+    validations:
+      required: true
+  - type: input
+    id: ticket
+    attributes:
+      label: Ortalama işlem geliri
+      placeholder: "3500 TL"
+    validations:
+      required: true
+  - type: dropdown
+    id: consent
+    attributes:
+      label: İletişim izni / KVKK durumu
+      options:
+        - İletişim izni olan hastalarla çalışabiliriz
+        - Emin değiliz, önce süreç netleşmeli
+    validations:
+      required: true
+  - type: checkboxes
+    id: package
+    attributes:
+      label: Pilot paketi
+      options:
+        - label: 7 günlük NoShow Kalkanı pilotunu, ₺4.900 başlangıç fiyatıyla değerlendirmek istiyorum.
+          required: true
